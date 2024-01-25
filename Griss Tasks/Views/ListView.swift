@@ -24,7 +24,12 @@ struct ListView: View {
                 ListRowView(title: item)
             }
         }
+        .listStyle(PlainListStyle())
         .navigationTitle("ToDo List 📝")
+        .navigationBarItems(
+            leading: EditButton(), 
+            trailing:
+                NavigationLink("Add", destination: AddView()))
     }
 }
 
