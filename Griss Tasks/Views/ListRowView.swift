@@ -9,6 +9,10 @@ import SwiftUI
 
 struct ListRowView: View {
     
+    /*
+     variables that are not @State must have its
+     params provided, unless it is said otherwise.
+     */
     let title: String
     
     var body: some View {
