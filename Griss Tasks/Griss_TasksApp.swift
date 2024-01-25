@@ -7,11 +7,22 @@
 
 import SwiftUI
 
+/*
+ MVVM Arch
+ 
+  Model - data point
+  View - UI
+  VielModel - manages models for View
+ 
+ */
+
 @main
 struct Griss_TasksApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ListView()
+            }
         }
     }
 }
