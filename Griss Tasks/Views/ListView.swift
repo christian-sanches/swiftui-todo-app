@@ -27,7 +27,10 @@ struct ListView: View {
         .listStyle(PlainListStyle())
         .navigationTitle("ToDo List 📝")
         .navigationBarItems(
-            leading: EditButton(), 
+            // Before, it was trowing some errors, because 'EditButton()'
+            // didn't exists on MacOS (only iOS).
+            // Intresting...
+            leading: EditButton(),
             trailing:
                 NavigationLink("Add", destination: AddView()))
     }
